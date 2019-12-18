@@ -2,4 +2,40 @@
   height: 7vh;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  padding: 5rem;
+  //box-shadow: $shadow-dark;
+  // margin-top: 3rem;
+
+  .logo-container {
+    cursor: pointer;
+  }
+
+  .options {
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .option {
+      cursor: pointer;
+      position: relative;
+
+      &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        background-color: $color-secondary;
+        transform: scaleX(0);
+        transition: transform 0.2s;
+      }
+
+      &:hover::before {
+        transform: scaleX(1);
+      }
+    }
+  }
 }

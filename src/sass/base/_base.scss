@@ -13,5 +13,18 @@ html {
 
 body {
   box-sizing: border-box;
-  padding: 3rem;
+  //padding: 3rem;
+  //color: $color-secondary-light;
+  background-color: $color-primary;
+  // background-image: linear-gradient(
+  //   to right,
+  //   $color-primary-light,
+  //   $color-primary-dark
+  // );
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a {
+  text-decoration: none;
 }

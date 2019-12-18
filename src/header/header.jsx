@@ -1,10 +1,12 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Header = () => {
   return (
     <div className="header">
-      <div className="logo">
-        <h2>Logo</h2>
+      <div className="logo-container">
+        <div className="logo">{`<RA>`}</div>
+        {/* <img src={logo} alt="logo" /> */}
       </div>
       <div className="options">
         <a href="#" className="option">

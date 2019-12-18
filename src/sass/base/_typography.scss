@@ -8,14 +8,80 @@ body {
 .main-primary {
   width: 100vh;
   text-transform: uppercase;
+  //color: $color-secondary-light;
 
   &--main {
     display: block;
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 1rem;
+    background-image: linear-gradient(
+      to bottom,
+      $color-grey-light-1,
+      $color-grey-dark-1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   &--sub {
     display: block;
+    background-image: linear-gradient(
+      to bottom,
+      $color-grey-light-1,
+      $color-grey-dark-1
+    );
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
+}
+
+.header {
+  .option {
+    font-size: 2rem;
+    padding: 0 15px;
+    color: $color-grey-light-1;
+    // background-image: linear-gradient(
+    //   to right,
+    //   $color-secondary,
+    //   $color-secondary-dark
+    // );
+    // background-clip: text;
+    // -webkit-background-clip: text;
+    // color: transparent;
+  }
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: 800;
+  background-image: linear-gradient(
+    to bottom,
+    $color-secondary,
+    $color-secondary-dark
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-secondary {
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: 4rem;
+  background-image: linear-gradient(
+    to bottom,
+    $color-grey-light-1,
+    $color-grey-dark-1
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.paragraph {
+  font-size: $default-font-size;
+  color: $color-grey-light-1;
 }
