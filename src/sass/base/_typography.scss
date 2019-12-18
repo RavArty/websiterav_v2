@@ -1,0 +1,21 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+}
+
+.main-primary {
+  width: 100vh;
+  text-transform: uppercase;
+
+  &--main {
+    display: block;
+    font-size: 5rem;
+    font-weight: 400;
+    letter-spacing: 1rem;
+  }
+  &--sub {
+    display: block;
+  }
+}
