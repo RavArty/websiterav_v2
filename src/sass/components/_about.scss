@@ -1,3 +1,33 @@
 .about {
   height: 100vh;
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 12rem;
+
+    .profile-pic {
+      margin-left: 10rem;
+      width: 30%;
+      height: auto;
+      border: 0.5rem solid $color-secondary;
+      border-radius: 7px;
+
+      //overflow: hidden;
+
+      // background-position: center;
+    }
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 12rem;
+
+    &__item {
+      flex: 0 0 50%;
+    }
+  }
 }
