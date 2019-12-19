@@ -2,7 +2,7 @@ body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   /*font-size: 16px;*/
-  font-size: 1.4rem;
+  font-size: $default-font-size;
   color: $color-grey-light-1;
   line-height: 1.7;
 }
@@ -28,6 +28,7 @@ body {
   }
   &--sub {
     display: block;
+    font-size: 3rem;
     background-image: linear-gradient(
       to bottom,
       $color-grey-light-1,
@@ -83,7 +84,7 @@ body {
   color: transparent;
 }
 
-.paragraph {
-  font-size: $default-font-size;
-  color: $color-grey-light-1;
-}
+// .paragraph {
+//   font-size: $default-font-size;
+//   color: $color-grey-light-1;
+// }
