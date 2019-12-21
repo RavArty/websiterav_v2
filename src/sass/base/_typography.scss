@@ -25,6 +25,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: $shadow-dark;
   }
   &--sub {
     display: block;
@@ -37,6 +38,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    text-shadow: $shadow-dark;
   }
 }
 
@@ -45,6 +47,7 @@ body {
     font-size: 2rem;
     padding: 0 15px;
     color: $color-grey-light-1;
+    text-shadow: $shadow-dark;
     // background-image: linear-gradient(
     //   to right,
     //   $color-secondary,
@@ -67,6 +70,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: $shadow-dark;
 }
 
 .heading-secondary {
@@ -82,9 +86,21 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
+  text-shadow: $shadow-dark;
 }
 
 // .paragraph {
 //   font-size: $default-font-size;
 //   color: $color-grey-light-1;
 // }
+
+.projects-item__other {
+  &--title {
+    font-size: 2rem;
+    font-weight: 900;
+  }
+  &--description {
+    font-size: 1.5rem;
+    font-weight: 300;
+  }
+}
