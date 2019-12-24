@@ -27,12 +27,15 @@
       height: 5rem;
       width: 5rem;
       fill: $color-grey-light-2;
+      box-shadow: $shadow-light;
+      border-radius: 100px;
       transition: all 0.2s;
 
-      &:hover {
-        box-shadow: $shadow-light;
-        transform: translateY(-3px);
-      }
+      @include hoverUpCircle // &:hover {
+        //   box-shadow: $shadow-dark;
+        //   border-radius: 100px;
+        //   transform: translateY(-3px);
+        // };;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
     }
   }
   &__email {
@@ -44,8 +47,81 @@
     &-icon {
       height: 5rem;
       width: 5rem;
+
       fill: $color-grey-light-2;
       margin-right: 2rem;
+      position: relative;
+    }
+
+    &-button {
+      margin-left: 2rem;
+      text-transform: uppercase;
+      font-size: 1.9rem;
+      color: $color-grey-light-2;
+      background-color: $color-grey-dark-1;
+      border: none;
+      width: 8rem;
+      height: 3rem;
+      border-radius: 4px;
+      box-shadow: $shadow-light;
+      transition: all 0.2s;
+
+      &:hover {
+        transform: translateY(-3px);
+        box-shadow: $shadow-dark;
+        color: $color-secondary;
+      }
+      &:hover .tooltiptext {
+        visibility: visible;
+        opacity: 1;
+      }
+
+      &:active {
+        outline: none;
+        transform: translateY(-1px);
+        box-shadow: $shadow-light;
+        // color: $color-secondary;
+      }
     }
   }
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+
+  .tooltiptext {
+    visibility: hidden;
+    width: 15rem;
+    background-color: $color-grey-dark-1;
+    color: $color-grey-light-1;
+    font-size: 1.4rem;
+    text-align: center;
+    border-radius: 0.6rem;
+    padding: 0.5rem;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -7.5rem;
+    opacity: 0;
+    transition: opacity 0.3s;
+    box-shadow: $shadow-light;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: $color-grey-dark-1 transparent transparent transparent;
+    }
+  }
+
+  // .tooltip:hover .tooltiptext {
+  //   visibility: visible;
+  //   opacity: 1;
+  // }
 }
