@@ -29,20 +29,27 @@
       border-radius: $border-radius;
       transition: all 0.2s;
 
-      &:hover {
-        //  background: black;
-        // transform: translateX(3px);
-        opacity: 0.3;
-      }
+      // &:hover {
+      //   //  background: black;
+      //   // transform: translateX(3px);
+      //   opacity: 0.3;
+      // }
     }
     &-caption {
       position: absolute;
       color: $color-grey-light-1;
       top: 50%;
-      left: 30%;
+      right: -100%;
+      opacity: 0;
+
+      transition: all 0.3s;
     }
-    &-image:hover &-caption {
-      transform: translateX(-7px);
+    &-effect:hover &-caption {
+      opacity: 1;
+      right: 30%;
+    }
+    &-effect:hover &-image {
+      opacity: 0.2;
     }
   }
   &__other {
