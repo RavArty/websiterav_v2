@@ -2,13 +2,47 @@
   &__main {
     //display: flex;
     //flex-direction: column;
+    //background: red;
 
-    .image {
+    // border-radius: $border-radius;
+    // overflow: hidden;
+
+    &-effect {
+      background-image: linear-gradient(
+        rgba($color-secondary, 0.93),
+        rgba($color-secondary, 0.93)
+      );
+      position: relative;
+      //overflow: hidden;
+      // width: 90%;
+      border-radius: $border-radius;
+      transition: all 0.2s;
+      overflow: hidden;
+    }
+    &-image {
       width: 100%;
       height: 100%;
-      object-fit: cover;
+
+      // object-fit: cover;
+      // align-self: start;
       display: block;
       border-radius: $border-radius;
+      transition: all 0.2s;
+
+      &:hover {
+        //  background: black;
+        // transform: translateX(3px);
+        opacity: 0.3;
+      }
+    }
+    &-caption {
+      position: absolute;
+      color: $color-grey-light-1;
+      top: 50%;
+      left: 30%;
+    }
+    &-image:hover &-caption {
+      transform: translateX(-7px);
     }
   }
   &__other {
@@ -18,6 +52,12 @@
     background-color: $color-grey-dark-1;
     box-shadow: $shadow-light;
     border-radius: $border-radius;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: translateY(-3px);
+      box-shadow: $shadow-dark;
+    }
 
     &--header {
       height: 30%;
@@ -46,9 +86,12 @@
         //padding: 0 1rem;
         cursor: pointer;
         fill: $color-grey-light-1;
+        transition: all 0.2s;
 
         &:hover {
+          transform: translateY(-2px);
           fill: $color-secondary;
+          box-shadow: $shadow-light;
         }
       }
     }

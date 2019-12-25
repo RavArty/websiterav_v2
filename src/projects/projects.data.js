@@ -2,22 +2,26 @@ export const PROJECTS_DATA = [
   {
     id: 1,
     title: 'ecom',
-    imgUrl: 'https://i.ibb.co/7GW3prF/ecom.png'
+    imgUrl: 'https://i.ibb.co/7GW3prF/ecom.png',
+    caption: 'test captioin add something here...'
   },
   {
     id: 2,
     title: 'colors',
-    imgUrl: 'https://i.ibb.co/f2R26L4/colorsv2.png'
+    imgUrl: 'https://i.ibb.co/f2R26L4/colorsv2.png',
+    caption: 'test captioin add something here...'
   },
   {
     id: 3,
     title: 'rollocoball',
-    imgUrl: 'https://i.ibb.co/Zh4nBL6/rol2.jpg'
+    imgUrl: 'https://i.ibb.co/zfnQxh1/rollocoball.png',
+    caption: 'test captioin add something here...'
   },
   {
     id: 4,
     title: 'turtle_squad',
-    imgUrl: 'https://i.ibb.co/hXSBxX4/turtles2.png'
+    imgUrl: 'https://i.ibb.co/GT4Wvk7/turtlesquad.png',
+    caption: 'test captioin add something here...'
   }
 ];
 

@@ -5,16 +5,16 @@
   .main-items {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    //grid-template-rows: 1fr 1fr;
-    align-items: stretch;
-    grid-gap: 1rem;
+    //grid-template-columns: repeat(2, 40rem);
+    //grid-template-rows: repeat(2, minmax(20rem, min-content));
+    // justify-items: stretch;
+    //  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 3rem;
+    margin: $margin-small;
   }
 
   .more-items {
     display: flex;
     justify-content: space-between;
-
-    &:hover {
-    }
   }
 }
