@@ -37,16 +37,50 @@
     }
     &-caption {
       position: absolute;
-      color: $color-grey-light-1;
-      top: 50%;
-      right: -100%;
-      opacity: 0;
+      width: 100%;
+      height: 100%;
+      top: 0%;
 
-      transition: all 0.3s;
+      //  right: -100%;
+      &-body {
+        position: absolute;
+        color: $color-grey-light-1;
+        top: 50%;
+        right: -100%;
+        opacity: 1;
+
+        transition: all 0.3s;
+      }
+
+      &-header {
+        //  position: absolute;
+        color: $color-grey-light-1;
+        opacity: 0;
+      }
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: -50%;
+        height: 2px;
+        width: 100%;
+        background-color: black;
+        transform: scaleX(0);
+        transition: transform 0.2s;
+        // transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
+        //   background-color 0.1s;
+      }
+
+      &:hover::after {
+        transform: scaleX(1);
+      }
     }
-    &-effect:hover &-caption {
+    &-effect:hover &-caption-body {
       opacity: 1;
       right: 30%;
+    }
+    &-effect:hover &-caption-header {
+      opacity: 1;
     }
     &-effect:hover &-image {
       opacity: 0.2;

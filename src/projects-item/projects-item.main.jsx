@@ -11,7 +11,8 @@ const ProjectsItemMain = ({ id, title, imgUrl, caption }) => {
           alt="Main Projects"
         ></img>
         <figcaption className="projects-item__main-caption">
-          {caption}
+          <h3 className="projects-item__main-caption-header">Header</h3>
+          <p className="projects-item__main-caption-body">{caption}</p>
         </figcaption>
       </figure>
     </div>
