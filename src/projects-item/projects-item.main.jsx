@@ -1,4 +1,5 @@
 import React from 'react';
+import { ReactComponent as External } from '../assets/SVG/new-tab.svg';
 
 const ProjectsItemMain = ({ id, title, imgUrl, header, caption }) => {
   return (
@@ -13,6 +14,7 @@ const ProjectsItemMain = ({ id, title, imgUrl, header, caption }) => {
         <figcaption className="projects-item__main-caption">
           <h3 className="projects-item__main-caption-header">{header}</h3>
           <p className="projects-item__main-caption-body">{caption}</p>
+          <External className="projects-item__main-caption-link" />
         </figcaption>
       </figure>
     </div>

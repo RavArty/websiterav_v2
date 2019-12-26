@@ -1,5 +1,6 @@
 .projects-item {
   &__main {
+    position: relative;
     //display: flex;
     //flex-direction: column;
     //background: red;
@@ -42,6 +43,20 @@
       top: 0%;
 
       //  right: -100%;
+
+      &-link {
+        position: absolute;
+        top: 5%;
+        right: 5%;
+        transition: all 0.2s;
+
+        &:hover {
+          cursor: pointer;
+          transform: translateY(-2px);
+          box-shadow: $shadow-light;
+        }
+      }
+
       &-body {
         position: absolute;
         width: 60%;
@@ -89,6 +104,17 @@
     &-effect:hover &-image {
       opacity: 0.2;
     }
+
+    // &-link:hover &-caption-body {
+    //   opacity: 1;
+    //   right: 35%;
+    // }
+    // &-link:hover &-caption-header {
+    //   opacity: 1;
+    // }
+    // &-link:hover &-image {
+    //   opacity: 0.2;
+    // }
   }
   &__other {
     padding: 2rem;
