@@ -4,8 +4,8 @@ import ProjectsItemOther from '../projects-item/projects-item.other';
 import { PROJECTS_DATA, OTHER_PROJECTS_DATA } from './projects.data.js';
 
 const Projects = () => {
-  const [data, setData] = useState(PROJECTS_DATA);
-  const [moreData, setMoreData] = useState(OTHER_PROJECTS_DATA);
+  const [data] = useState(PROJECTS_DATA);
+  const [moreData] = useState(OTHER_PROJECTS_DATA);
 
   return (
     <div className="projects">

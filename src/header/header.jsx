@@ -1,7 +1,12 @@
 import React from 'react';
+import { Link, animateScroll as scroll } from 'react-scroll';
 //import logo from '../assets/logo.png';
 
 const Header = () => {
+  const scrollToTop = () => {
+    scroll.scrollToTop();
+  };
+
   return (
     <div className="header">
       <div className="logo-container">
@@ -9,15 +14,42 @@ const Header = () => {
         {/* <img src={logo} alt="logo" /> */}
       </div>
       <div className="options">
-        <a href="#" className="option">
+        <Link
+          className="option"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth="easeInOutQuint"
+          offset={20}
+          duration={1000}
+          delay={100}
+        >
           ABOUT
-        </a>
-        <a href="#" className="option">
+        </Link>
+        <Link
+          className="option"
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth="easeInOutQuint"
+          offset={20}
+          duration={1000}
+          delay={100}
+        >
           PROJECTS
-        </a>
-        <a href="#" className="option">
+        </Link>
+        <Link
+          className="option"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth="easeInOutQuint"
+          offset={20}
+          duration={1500}
+          delay={100}
+        >
           CONTACT
-        </a>
+        </Link>
       </div>
     </div>
   );
