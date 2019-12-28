@@ -1,10 +1,14 @@
 .header {
   height: 7vh;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 5rem;
-  //box-shadow: $shadow-dark;
+  padding: 4rem;
+  position: fixed;
+  box-shadow: $shadow-light;
+  z-index: 10;
+  background-color: $color-primary;
   // margin-top: 3rem;
 
   .logo-container {
