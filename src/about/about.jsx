@@ -5,7 +5,7 @@ import logo from '../assets/logo.png';
 const About = () => {
   return (
     <div className="about">
-      <div className="u-center-text u-margin-bottom-big">
+      <div className="u-center-text u-margin-bottom-medium">
         <h2 className="heading-secondary">About</h2>
       </div>
       <div className="about__description">

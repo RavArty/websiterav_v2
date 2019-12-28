@@ -9,7 +9,7 @@ const Projects = () => {
 
   return (
     <div className="projects">
-      <div className="u-center-text u-margin-bottom-big">
+      <div className="u-center-text u-margin-bottom-medium">
         <h2 className="heading-secondary">Projects</h2>
       </div>
       <div className="main-items u-margin-bottom-medium">
