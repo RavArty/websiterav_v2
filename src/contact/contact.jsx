@@ -33,12 +33,20 @@ const Contact = () => {
       <div className="contact__navigation">
         <ul className="contact__list u-margin-bottom-big">
           <li className="contact__item">
-            <a href="#" className="contact__link">
+            <a
+              href="https://github.com/RavArty"
+              className="contact__link"
+              target="_blank"
+            >
               <Github className="contact__link-icon" />
             </a>
           </li>
           <li className="contact__item">
-            <a href="#" className="contact__link">
+            <a
+              href="https://www.facebook.com/Ravshan.Artykov"
+              className="contact__link"
+              target="_blank"
+            >
               <Facebook className="contact__link-icon" />
             </a>
           </li>
