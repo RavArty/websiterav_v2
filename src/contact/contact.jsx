@@ -37,6 +37,7 @@ const Contact = () => {
               href="https://github.com/RavArty"
               className="contact__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Github className="contact__link-icon" />
             </a>
@@ -46,6 +47,7 @@ const Contact = () => {
               href="https://www.facebook.com/Ravshan.Artykov"
               className="contact__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Facebook className="contact__link-icon" />
             </a>
@@ -55,6 +57,7 @@ const Contact = () => {
               href="https://www.linkedin.com/in/ravart/"
               className="contact__link"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <Linkedin className="contact__link-icon" />
             </a>

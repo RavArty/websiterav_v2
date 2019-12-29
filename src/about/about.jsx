@@ -1,6 +1,6 @@
 import React from 'react';
 import profile_pic from '../assets/profile_pic.jpg';
-import logo from '../assets/logo.png';
+//import logo from '../assets/logo.png';
 
 const About = () => {
   return (
@@ -37,11 +37,7 @@ const About = () => {
             backgroundRepeat: 'no-repeat'
           }}
         /> */}
-        <img
-          className="profile-pic"
-          src={profile_pic}
-          alt="Photo Profile"
-        ></img>
+        <img className="profile-pic" src={profile_pic} alt="Profile"></img>
       </div>
     </div>
   );

@@ -51,7 +51,12 @@ const Header = () => {
         >
           CONTACT
         </Link>
-        <a href={resume} className="option" target="_blank">
+        <a
+          href={resume}
+          className="option"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           RESUME
         </a>
       </div>
