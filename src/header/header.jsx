@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
+import resume from '../assets/RavshanArtykovResume.pdf';
 //import logo from '../assets/logo.png';
 
 const Header = () => {
@@ -10,7 +11,7 @@ const Header = () => {
   return (
     <div className="header">
       <div className="logo-container">
-        <div className="logo">{`<RA>`}</div>
+        <div className="logo" onClick={scrollToTop}>{`<RA>`}</div>
         {/* <img src={logo} alt="logo" /> */}
       </div>
       <div className="options">
@@ -50,6 +51,9 @@ const Header = () => {
         >
           CONTACT
         </Link>
+        <a href={resume} className="option" target="_blank">
+          RESUME
+        </a>
       </div>
     </div>
   );

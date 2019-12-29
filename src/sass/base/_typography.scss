@@ -26,6 +26,10 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: $shadow-dark;
+
+    animation-name: moveInLeft;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
   }
   &--sub {
     display: block;
@@ -39,6 +43,7 @@ body {
     -webkit-background-clip: text;
     color: transparent;
     text-shadow: $shadow-dark;
+    animation: moveInRight 1s ease-out;
   }
 }
 
