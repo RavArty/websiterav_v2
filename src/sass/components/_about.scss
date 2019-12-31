@@ -7,8 +7,18 @@
     //height: 100%;
     justify-content: space-between;
     align-items: flex-start;
-    margin: $margin;
+    padding: $padding;
 
+    @include respond(tab-port) {
+      flex-direction: column;
+      align-items: center;
+      padding: $padding-small;
+    }
+    &--text {
+      @include respond(tab-port) {
+        margin-bottom: 5rem;
+      }
+    }
     .paragraph {
       text-align: left;
     }
@@ -23,6 +33,16 @@
       //overflow: hidden;
 
       background-position: center;
+
+      @include respond(tab-port) {
+        width: 50%;
+        margin-left: 0;
+        text-align: center;
+      }
+
+      @include respond(phone) {
+        width: 70%;
+      }
     }
   }
 
@@ -30,10 +50,24 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 12rem;
+    padding: $padding-medium;
+
+    @include respond(tab-port) {
+      //  padding-left: 17rem;
+      text-align: center;
+      padding: 0;
+    }
+    @include respond(phone) {
+      padding-left: 0;
+      text-align: center;
+    }
 
     &__item {
       flex: 0 0 50%;
+
+      @include respond(phone) {
+        flex: 1 1 60%;
+      }
     }
 
     &__item::before {

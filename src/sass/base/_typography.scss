@@ -8,7 +8,7 @@ body {
 }
 
 .main-primary {
-  width: 100vh;
+  width: 100vw;
   text-transform: uppercase;
   //color: $color-secondary-light;
 
@@ -16,7 +16,7 @@ body {
     display: block;
     font-size: 5rem;
     font-weight: 400;
-    letter-spacing: 1rem;
+    letter-spacing: 3rem;
     background-image: linear-gradient(
       to bottom,
       $color-grey-light-1,
@@ -30,10 +30,17 @@ body {
     animation-name: moveInLeft;
     animation-duration: 1s;
     animation-timing-function: ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 1rem;
+      //  font-family: 5rem;
+    }
   }
   &--sub {
     display: block;
     font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 1rem;
     background-image: linear-gradient(
       to bottom,
       $color-grey-light-1,
@@ -44,6 +51,10 @@ body {
     color: transparent;
     text-shadow: $shadow-dark;
     animation: moveInRight 1s ease-out;
+
+    @include respond(phone) {
+      letter-spacing: 0.5rem;
+    }
   }
 }
 
