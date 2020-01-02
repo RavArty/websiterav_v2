@@ -1,12 +1,6 @@
 .projects-item {
   &__main {
     position: relative;
-    //display: flex;
-    //flex-direction: column;
-    //background: red;
-
-    // border-radius: $border-radius;
-    // overflow: hidden;
 
     &-effect {
       background-image: linear-gradient(
@@ -14,8 +8,6 @@
         rgba($color-secondary, 0.93)
       );
       position: relative;
-      //overflow: hidden;
-      // width: 90%;
       border-radius: $border-radius;
       transition: all 0.2s;
       overflow: hidden;
@@ -24,25 +16,16 @@
       width: 100%;
       height: 100%;
 
-      // object-fit: cover;
-      // align-self: start;
       display: block;
       border-radius: $border-radius;
       transition: all 0.2s;
-
-      // &:hover {
-      //   //  background: black;
-      //   // transform: translateX(3px);
-      //   opacity: 0.3;
-      // }
     }
+
     &-caption {
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0%;
-
-      //  right: -100%;
 
       &-link {
         position: absolute;
@@ -70,7 +53,7 @@
 
       &-header {
         position: absolute;
-        top: 10%;
+        top: 5%;
         left: 5%;
         //margin: 2rem;
         //color: $color-grey-light-1;
@@ -104,18 +87,8 @@
     &-effect:hover &-image {
       opacity: 0.2;
     }
-
-    // &-link:hover &-caption-body {
-    //   opacity: 1;
-    //   right: 35%;
-    // }
-    // &-link:hover &-caption-header {
-    //   opacity: 1;
-    // }
-    // &-link:hover &-image {
-    //   opacity: 0.2;
-    // }
   }
+
   &__other {
     padding: 2rem;
     width: 22vw;
@@ -124,6 +97,14 @@
     box-shadow: $shadow-light;
     border-radius: $border-radius;
     transition: all 0.2s;
+
+    @include respond(tab-port) {
+      width: 35vw;
+    }
+
+    @include respond(phone) {
+      width: 50vw;
+    }
 
     &:hover {
       transform: translateY(-3px);
