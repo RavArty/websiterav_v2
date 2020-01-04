@@ -11,25 +11,16 @@
 
   .main-items {
     display: grid;
-    //grid-template-columns: 1fr 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    //grid-template-columns: repeat(2, 40rem);
-    //grid-template-rows: repeat(2, minmax(20rem, min-content));
-    // justify-items: stretch;
-    //  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+
+    @include respond(tab-land) {
+      grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    }
+
+    grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
-    //  margin: $margin-medium;
-    // @include respond(tab-land) {
-    //   padding: 0 40rem;
-    // }
   }
 
   .more-items {
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
-    // justify-items: center;
-    // grid-gap: 1rem;
-
     display: flex;
     justify-content: space-between;
 

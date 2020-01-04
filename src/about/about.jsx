@@ -10,14 +10,21 @@ const About = () => {
       </div>
       <div className="about__description">
         <div className="about__description--text">
-          <p className="paragraph u-margin-bottom-big">
-            I'm a software developer. I develop websites and web apps. I have a
-            bachelor degree from Moscow Engineering & Physics Institute in
-            Computer Science and Applied Mathematics. I also graduated from UCLA
-            Extension with a certificate in Systems Analysis. Technologies I am
-            working with:
+          <p className="paragraph u-margin-bottom-small">
+            Hi, I'm a software developer with a bachelor degree in Computer
+            Science from Moscow Engineering & Physics Institute and a
+            certificate in Systems Analysis from UCLA Extension.
+            <br />
+            For the last 10 years, I have worked in different IT companies in
+            Moscow. After, I decided to continue my education and in September
+            2019 I have graduated from UCLA Extension.
+            <br />
+            Currently, I've registered a company and working on my own projects.
+            You can find some examples below.
           </p>
-
+          <p className="u-margin-bottom-small">
+            Technologies I'm working with:
+          </p>
           <ul className="list">
             <li className="list__item">JavaScript</li>
             <li className="list__item">React</li>
