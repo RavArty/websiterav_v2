@@ -22,7 +22,8 @@
 
   .more-items {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @include respond(tab-port) {
       flex-wrap: wrap;

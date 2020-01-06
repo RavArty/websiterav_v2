@@ -1,17 +1,24 @@
 import React from 'react';
 import { ReactComponent as Folder } from '../assets/SVG/folder.svg';
 import { ReactComponent as Github } from '../assets/SVG/github.svg';
-import { ReactComponent as External } from '../assets/SVG/new-tab.svg';
+//import { ReactComponent as External } from '../assets/SVG/new-tab.svg';
 
-const ProjectsItemOther = ({ id, title, description }) => {
+const ProjectsItemOther = ({ id, title, description, link }) => {
   return (
     <div className="projects-item__other u-margin-bottom-big">
       {/* <div className="image" style={{ backgroundImage: `url(${imgUrl})` }} /> */}
       <div className="projects-item__other--header u-margin-bottom-medium">
         <Folder className="projects-item__other--logo" />
         <div className="projects-item__other--options">
-          <Github className="projects-item__other--options-option" />
-          <External className="projects-item__other--options-option" />
+          <a
+            href={`${link}`}
+            className="contact__link"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="projects-item__other--options-option" />
+          </a>
+          {/* <External className="projects-item__other--options-option" /> */}
         </div>
       </div>
 

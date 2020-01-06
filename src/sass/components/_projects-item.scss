@@ -91,8 +91,10 @@
 
   &__other {
     padding: 2rem;
-    width: 22vw;
+    min-width: 22vw;
+    max-width: 22vw;
     height: 30rem;
+    margin: 1rem;
     background-color: $color-grey-dark-1;
     box-shadow: $shadow-light;
     border-radius: $border-radius;
