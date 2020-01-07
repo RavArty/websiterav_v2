@@ -68,5 +68,12 @@ export const OTHER_PROJECTS_DATA = [
     title: 'Nodemon clone',
     description: 'Nodemon clone tool written on JavaScript',
     link: 'https://github.com/RavArty/nodemonclone'
+  },
+  {
+    id: 6,
+    title: 'Test Framework',
+    description:
+      'Test Framework for JavaScript projects. Ability to test browser-based JS apps',
+    link: 'https://github.com/RavArty/testframework'
   }
 ];
