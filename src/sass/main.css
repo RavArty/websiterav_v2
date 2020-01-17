@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   -webkit-box-sizing: inherit;
-          box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 html {
@@ -13,7 +13,7 @@ html {
 
 body {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #222831;
   background-size: cover;
   background-repeat: no-repeat;
@@ -42,7 +42,13 @@ body {
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 1rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#393e46));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eeeeee),
+    to(#393e46)
+  );
   background-image: linear-gradient(to bottom, #eeeeee, #393e46);
   background-clip: text;
   -webkit-background-clip: text;
@@ -51,7 +57,13 @@ body {
 
 .main-primary--sub {
   display: block;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#393e46));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eeeeee),
+    to(#393e46)
+  );
   background-image: linear-gradient(to bottom, #eeeeee, #393e46);
   background-clip: text;
   -webkit-background-clip: text;
@@ -67,7 +79,13 @@ body {
 .logo {
   font-size: 3rem;
   font-weight: 800;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#00adb5), to(#00656a));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#00adb5),
+    to(#00656a)
+  );
   background-image: linear-gradient(to bottom, #00adb5, #00656a);
   background-clip: text;
   -webkit-background-clip: text;
@@ -79,7 +97,13 @@ body {
   text-transform: uppercase;
   display: inline-block;
   margin-top: 4rem;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#eeeeee), to(#393e46));
+  background-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#eeeeee),
+    to(#393e46)
+  );
   background-image: linear-gradient(to bottom, #eeeeee, #393e46);
   background-clip: text;
   -webkit-background-clip: text;
@@ -113,11 +137,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 5rem;
 }
 
@@ -131,11 +155,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .header .options .option {
@@ -152,7 +176,7 @@ body {
   width: 100%;
   background-color: #00adb5;
   -webkit-transform: scaleX(0);
-          transform: scaleX(0);
+  transform: scaleX(0);
   -webkit-transition: -webkit-transform 0.2s;
   transition: -webkit-transform 0.2s;
   transition: transform 0.2s;
@@ -161,7 +185,7 @@ body {
 
 .header .options .option:hover::before {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .main {
@@ -174,7 +198,7 @@ body {
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
@@ -187,11 +211,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   margin: 0 12rem;
 }
 
@@ -209,14 +233,14 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: 0 12rem;
 }
 
 .about .list__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 50%;
-          flex: 0 0 50%;
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .about .list__item::before {

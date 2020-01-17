@@ -1,0 +1,42 @@
+@import '~bootstrap/scss/functions';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
+
+.navbar {
+  padding: 4rem;
+  z-index: 10;
+  // box-shadow: $shadow-light;
+  background-color: $color-primary;
+}
+
+.navbar-nav {
+  // @include media-breakpoint-up(sm) {
+  //   width: 10%;
+  //   align-items: center;
+  // }
+
+  .nav-link {
+    color: white !important;
+    cursor: pointer;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      background-color: $color-secondary;
+      transform: scaleX(0);
+      transition: transform 0.2s;
+    }
+
+    &:hover::before {
+      transform: scaleX(1);
+    }
+  }
+  a {
+    color: white;
+  }
+}
