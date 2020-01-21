@@ -9,8 +9,13 @@
   box-shadow: $shadow-light;
   z-index: 10;
   background-color: $color-primary;
+  transition: all 0.5s;
   // margin-top: 3rem;
 
+  &--hidden {
+    transform: translateY(-9rem);
+    box-shadow: none;
+  }
   .logo-container {
     cursor: pointer;
   }
