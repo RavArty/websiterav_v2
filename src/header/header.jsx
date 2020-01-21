@@ -1,15 +1,37 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import resume from '../assets/RavshanArtykovResume.pdf';
 //import logo from '../assets/logo.png';
 
 const Header = () => {
+  const [visible, setVisible] = useState(true);
+  const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  });
   const scrollToTop = () => {
     scroll.scrollToTop();
   };
 
+  const handleScroll = () => {
+    // const { prevScrollpos } = this.state;
+
+    const currentScrollPos = window.pageYOffset;
+    const visible = prevScrollpos > currentScrollPos;
+    setPrevScrollpos(currentScrollPos);
+    setVisible(visible);
+    // this.setState({
+    //   prevScrollpos: currentScrollPos,
+    //   visible
+    // });
+  };
+
   return (
-    <div className="header">
+    <nav className={`header ${!visible ? 'header--hidden' : ''}`}>
       <div className="logo-container">
         <div className="logo" onClick={scrollToTop}>{`<RA>`}</div>
         {/* <img src={logo} alt="logo" /> */}
@@ -60,7 +82,7 @@ const Header = () => {
           RESUME
         </a>
       </div>
-    </div>
+    </nav>
   );
 };
 
