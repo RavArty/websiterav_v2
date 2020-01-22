@@ -96,7 +96,7 @@
     height: 30rem;
     margin: 1rem;
     background-color: $color-grey-dark-1;
-    box-shadow: $shadow-light;
+    // box-shadow: $shadow-light;
     border-radius: $border-radius;
     transition: all 0.2s;
 
@@ -110,7 +110,7 @@
 
     &:hover {
       transform: translateY(-3px);
-      box-shadow: $shadow-dark;
+      box-shadow: $shadow-light;
     }
 
     &--header {
@@ -143,9 +143,9 @@
         transition: all 0.2s;
 
         &:hover {
-          transform: translateY(-2px);
+          //  transform: translateY(-2px);
           fill: $color-secondary;
-          box-shadow: $shadow-light;
+          // box-shadow: $shadow-light;
         }
       }
     }

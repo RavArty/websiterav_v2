@@ -3,7 +3,7 @@ body {
   font-weight: 400;
   /*font-size: 16px;*/
   font-size: $default-font-size;
-  color: $color-grey-light-1;
+  color: $color-grey-light-2;
   line-height: 1.7;
 }
 
@@ -25,7 +25,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: $shadow-dark;
+    //  text-shadow: $shadow-dark;
 
     animation-name: moveInLeft;
     animation-duration: 1s;
@@ -49,7 +49,7 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
-    text-shadow: $shadow-dark;
+    //  text-shadow: $shadow-dark;
     animation: moveInRight 1s ease-out;
 
     @include respond(phone) {
@@ -63,7 +63,7 @@ body {
     font-size: 2rem;
     padding: 0 15px;
     color: $color-grey-light-1;
-    text-shadow: $shadow-dark;
+    //  text-shadow: $shadow-dark;
     // background-image: linear-gradient(
     //   to right,
     //   $color-secondary,
@@ -86,7 +86,15 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: $shadow-dark;
+  // text-shadow: $shadow-dark;
+  transition: all 0.2s;
+  &:hover {
+    background-image: linear-gradient(
+      to bottom,
+      $color-secondary-08,
+      $color-secondary-dark-08
+    );
+  }
 }
 
 .heading-secondary {
@@ -102,7 +110,7 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  text-shadow: $shadow-dark;
+  // text-shadow: $shadow-dark;
 }
 
 // .paragraph {

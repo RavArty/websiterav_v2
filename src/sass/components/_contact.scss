@@ -44,7 +44,7 @@
         //   box-shadow: $shadow-dark;
         //   border-radius: 100px;
         //   transform: translateY(-3px);
-        // }
+        // };;
     }
   }
   &__email {
@@ -77,8 +77,8 @@
 
       &:hover {
         cursor: pointer;
-        transform: translateY(-3px);
-        box-shadow: $shadow-dark;
+        //  transform: translateY(-3px);
+        //  box-shadow: $shadow-dark;
         color: $color-secondary;
       }
       &:hover .tooltiptext {
@@ -88,8 +88,8 @@
 
       &:active {
         outline: none;
-        transform: translateY(-1px);
-        box-shadow: $shadow-light;
+        //  transform: translateY(-1px);
+        //  box-shadow: $shadow-light;
         // color: $color-secondary;
       }
     }

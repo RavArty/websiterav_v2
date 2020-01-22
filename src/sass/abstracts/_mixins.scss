@@ -1,6 +1,6 @@
 @mixin hoverUpCircle {
   &:hover {
-    box-shadow: $shadow-dark;
+    box-shadow: $shadow-light;
     border-radius: 100px;
     transform: translateY(-3px);
   }
