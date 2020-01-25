@@ -101,11 +101,12 @@
     transition: all 0.2s;
 
     @include respond(tab-port) {
-      width: 35vw;
+      min-width: 35vw;
     }
 
     @include respond(phone) {
-      width: 50vw;
+      //  padding:
+      min-width: 70vw;
     }
 
     &:hover {
