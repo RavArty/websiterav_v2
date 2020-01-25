@@ -27,7 +27,7 @@
       // }
 
       @include respond(phone) {
-        margin-right: 5rem;
+        margin-right: 10rem;
       }
     }
   }
@@ -44,7 +44,7 @@
         //   box-shadow: $shadow-dark;
         //   border-radius: 100px;
         //   transform: translateY(-3px);
-        // };;
+        // };;;;;;;;;;;;;;;;;;;
     }
   }
   &__email {
@@ -53,6 +53,10 @@
     justify-content: center;
     align-items: center;
 
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
     &-icon {
       height: 5rem;
       width: 5rem;
@@ -60,6 +64,10 @@
       fill: $color-grey-light-2;
       margin-right: 2rem;
       position: relative;
+
+      @include respond(phone) {
+        margin-right: 0;
+      }
     }
 
     &-button {
@@ -73,7 +81,15 @@
       height: 3rem;
       border-radius: 4px;
       //  box-shadow: $shadow-light;
-      transition: all 0.2s;
+      transition: all 2.2s;
+
+      @include respond(phone) {
+        margin-top: 2rem;
+        margin-left: 0;
+        font-size: 3rem;
+        width: 13rem;
+        height: 7rem;
+      }
 
       &:hover {
         cursor: pointer;
@@ -86,12 +102,12 @@
         opacity: 1;
       }
 
-      &:active {
-        outline: none;
-        //  transform: translateY(-1px);
-        //  box-shadow: $shadow-light;
-        // color: $color-secondary;
-      }
+      // &:active {
+      //   outline: none;
+      //   //  transform: translateY(-1px);
+      //   //  box-shadow: $shadow-light;
+      //   // color: $color-secondary;
+      // }
     }
   }
 
