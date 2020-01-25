@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import resume from '../assets/RavshanArtykovResume.pdf';
 import { ReactComponent as Menu } from '../assets/SVG/icon-burger-menu.svg';
 //import logo from '../assets/logo.png';
 
 const Header = () => {
+  const dropDownNode = useRef();
   const [visible, setVisible] = useState(true);
   const [dropDown, setDropDown] = useState(false);
   const [prevScrollpos, setPrevScrollpos] = useState(window.pageYOffset);
@@ -12,6 +13,7 @@ const Header = () => {
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
     window.addEventListener('resize', resizeWindow);
+    window.addEventListener('mousedown', hideDropDown);
     return () => {
       window.removeEventListener('scroll', handleScroll);
       window.removeEventListener('resize', resizeWindow);
@@ -23,9 +25,15 @@ const Header = () => {
   const resizeWindow = () => {
     setDropDown(false);
   };
+  const hideDropDown = e => {
+    //  console.log('dropdown hide: ', dropDown);
+    if (!dropDownNode.current.contains(e.target)) {
+      setDropDown(false);
+    }
+  };
   const handleScroll = () => {
     // const { prevScrollpos } = this.state;
-
+    setDropDown(false);
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollpos > currentScrollPos;
     setPrevScrollpos(currentScrollPos);
@@ -80,13 +88,14 @@ const Header = () => {
           className="option"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => setDropDown(!dropDown)}
         >
           RESUME
         </a>
       </div>
     );
   };
-  console.log('dropDown: ', dropDown);
+  //console.log('dropDown: ', dropDown);
   return (
     <nav className={`header ${!visible ? 'header--hidden' : ''}`}>
       <div className="logo-container">
@@ -95,7 +104,7 @@ const Header = () => {
       </div>
       <div className="reg-nav">{headerElements()}</div>
 
-      <div className="mob-wrapper">
+      <div className="mob-wrapper" ref={dropDownNode}>
         <Menu className="mob-menu" onClick={() => setDropDown(!dropDown)} />
         {dropDown ? <div className="mob-nav">{headerElements()}</div> : null}
       </div>
