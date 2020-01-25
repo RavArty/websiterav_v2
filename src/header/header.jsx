@@ -30,13 +30,9 @@ const Header = () => {
     // });
   };
 
-  return (
-    <nav className={`header ${!visible ? 'header--hidden' : ''}`}>
-      <div className="logo-container">
-        <div className="logo" onClick={scrollToTop}>{`<RA>`}</div>
-        {/* <img src={logo} alt="logo" /> */}
-      </div>
-      <div className="options">
+  const headerElements = () => {
+    return (
+      <>
         <Link
           className="option"
           activeClass="active"
@@ -81,6 +77,20 @@ const Header = () => {
         >
           RESUME
         </a>
+      </>
+    );
+  };
+
+  return (
+    <nav className={`header ${!visible ? 'header--hidden' : ''}`}>
+      <div className="logo-container">
+        <div className="logo" onClick={scrollToTop}>{`<RA>`}</div>
+        {/* <img src={logo} alt="logo" /> */}
+      </div>
+      <div className="options">{headerElements()}</div>
+
+      <div className="mob-wrapper">
+        <div className="mob-nav">{headerElements()}</div>
       </div>
     </nav>
   );
