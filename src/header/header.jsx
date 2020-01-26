@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Link, animateScroll as scroll } from 'react-scroll';
 import resume from '../assets/RavshanArtykovResume.pdf';
-import { ReactComponent as Menu } from '../assets/SVG/icon-burger-menu.svg';
+import { ReactComponent as Menu } from '../assets/SVG/menu.svg';
 //import logo from '../assets/logo.png';
 
 const Header = () => {
