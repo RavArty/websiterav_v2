@@ -1,36 +1,38 @@
 .projects {
   //height: 100vh;
-  margin: $margin;
-
-  @include respond(tab-port) {
-    margin: $margin-medium;
-  }
-  @include respond(phone) {
-    margin: $margin-small;
-  }
 
   .main-items {
     display: grid;
-
+    margin: $margin;
     @include respond(tab-land) {
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
     }
 
     grid-template-columns: 1fr 1fr;
     grid-gap: 3rem;
+
+    @include respond(tab-port) {
+      margin: $margin-medium;
+    }
+    @include respond(phone) {
+      margin: $margin-small;
+    }
   }
 
   .more-items {
+    margin: $margin-medium;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     @include respond(tab-port) {
+      margin: $margin-small;
       flex-wrap: wrap;
       align-content: center;
     }
 
     @include respond(phone) {
+      margin: 0;
       flex-direction: column;
     }
   }
