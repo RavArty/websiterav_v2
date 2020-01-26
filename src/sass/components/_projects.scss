@@ -2,11 +2,12 @@
   //height: 100vh;
 
   .main-items {
-    align-items: center;
     display: grid;
     margin: $margin;
+
     @include respond(tab-land) {
       grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+      //  align-items: center;
     }
 
     grid-template-columns: 1fr 1fr;
@@ -16,7 +17,7 @@
       margin: $margin-medium;
     }
     @include respond(phone) {
-      margin: $margin-small;
+      margin: 3rem;
     }
   }
 
