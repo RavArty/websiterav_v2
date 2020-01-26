@@ -2,6 +2,7 @@
   //height: 100vh;
 
   .main-items {
+    align-items: center;
     display: grid;
     margin: $margin;
     @include respond(tab-land) {
@@ -24,6 +25,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     @include respond(tab-port) {
       margin: $margin-small;
