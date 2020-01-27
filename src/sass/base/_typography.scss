@@ -8,7 +8,7 @@ body {
 }
 
 .main-primary {
-  width: 100vw;
+  //  width: 100vw;
   text-transform: uppercase;
   //color: $color-secondary-light;
 
@@ -17,6 +17,7 @@ body {
     font-size: 5rem;
     font-weight: 400;
     letter-spacing: 3rem;
+    line-height: normal;
     background-image: linear-gradient(
       to bottom,
       $color-grey-light-1,
@@ -37,8 +38,9 @@ body {
     }
   }
   &--sub {
+    margin-top: 4rem;
     display: block;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     letter-spacing: 1rem;
     background-image: linear-gradient(

@@ -1,11 +1,11 @@
 import React from 'react';
-import profile_pic from '../assets/profile_pic.jpg';
+//import profile_pic from '../assets/profile_pic.jpg';
 //import logo from '../assets/logo.png';
 
 const About = () => {
   return (
     <div className="about">
-      <div className="u-center-text u-margin-bottom-medium">
+      <div className="u-center-text u-margin-bottom-big">
         <h2 className="heading-secondary">About</h2>
       </div>
       <div className="about__description">
@@ -44,7 +44,7 @@ const About = () => {
             backgroundRepeat: 'no-repeat'
           }}
         /> */}
-        <img className="profile-pic" src={profile_pic} alt="Profile"></img>
+        {/* <img className="profile-pic" src={profile_pic} alt="Profile"></img> */}
       </div>
     </div>
   );
