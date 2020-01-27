@@ -76,21 +76,24 @@
     .mob-nav {
       position: absolute;
       margin-left: -10rem;
-    }
-    .options {
-      position: absolute;
-      // border: 0.5rem solid $color-secondary;
-      //  display: none;
-      //  display: flex;
-      padding-top: 5rem;
-      //  padding-right: 15rem;
-      // margin-right: 20rem;
-      flex-direction: column;
-      justify-content: center;
+      //border: 0.3rem solid $color-secondary;
 
-      .option {
-        &:not(:last-child) {
-          margin-bottom: 2rem;
+      .options {
+        // position: absolute;
+        // background-color: white;
+        // border: 0.5rem solid $color-secondary;
+        //  display: none;
+        //  display: flex;
+        padding-top: 5rem;
+        //  padding-right: 15rem;
+        // margin-right: 20rem;
+        flex-direction: column;
+        justify-content: center;
+
+        .option {
+          &:not(:last-child) {
+            margin-bottom: 2rem;
+          }
         }
       }
     }
