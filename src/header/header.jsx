@@ -106,7 +106,12 @@ const Header = () => {
 
       <div className="mob-wrapper" ref={dropDownNode}>
         <Menu className="mob-menu" onClick={() => setDropDown(!dropDown)} />
-        {dropDown ? <div className="mob-nav">{headerElements()}</div> : null}
+        {dropDown ? (
+          <aside className="mob-nav">{headerElements()}</aside>
+        ) : // {/* <aside className={`mob-nav ${!dropDown ? 'mob-nav--hidden' : ''}`}>
+        //   {headerElements()}
+        // </aside> */}
+        null}
       </div>
     </nav>
   );
